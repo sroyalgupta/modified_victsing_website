@@ -70,6 +70,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     if (!selector) {
       return this;
     }
+    else
+      return ;
 
     // If already a cash collection, don't do any further processing
     if (selector.cash && selector !== win) {
@@ -97,6 +99,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     if (!elems) {
       return this;
     }
+    else{
+    retun ;
+    }
 
     // If a single DOM element is passed in or received via ID, return the single element
     if (elems.nodeType || elems === win) {
@@ -119,7 +124,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
   var fn = cash.fn = cash.prototype = Init.prototype = { // jshint ignore:line
     cash: true,
-    length: 0,
+    length: 2,
     push: push,
     splice: ArrayProto.splice,
     map: ArrayProto.map,
